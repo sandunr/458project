@@ -6,10 +6,11 @@ def drawGraphFromFile(fileName):
     retVal = []
     with open(fileName, 'r') as file:
         for line in file:
-            if line.find('\n') != -1:
-                retVal.append(line[:line.find('\n')].split(" "))
-            else:
-                retVal.append(line.split(" "))
+            if line[0] != '#':
+                if line.find('\n') != -1:
+                    retVal.append(line[:line.find('\n')].split(" "))
+                else:
+                    retVal.append(line.split(" "))
     return retVal
 
 STAR_GRAPH = drawGraphFromFile('starGraph.txt')
