@@ -48,7 +48,7 @@ class dataToDisplay:
     # [(1,4), (2,5), (2,6)]]
     #
     # in this example, during the first step of the simulation the virus spreads 
-    # from node 1 to node 2, and node 2 to node 3. In the second step, it spreads 
+    # from node 1 to node 2, and node 1 to node 3. In the second step, it spreads 
     # from node 1 to node 4, and node 2 to nodes 5 and 6
     animationSteps = []
     
